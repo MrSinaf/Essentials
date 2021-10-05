@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Essentials</name>
+    </assembly>
+    <members>
+        <member name="T:SinafProduction.Essentials.Camera2DOverlay">
+            <summary>
+            Gère la caméra overlay au mieux pour la caméra 2D.
+            </summary>
+        </member>
+        <member name="T:SinafProduction.Essentials.Grid`1">
+            <summary>
+            Crée une grille en 2D ou 3D.
+            </summary>
+            <typeparam name="T">Type du contenue dans la grille.</typeparam>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.#ctor(System.Int32,System.Int32,System.Func{System.Int32,System.Int32,`0},System.Boolean)">
+            <summary>
+            Instancie une nouvelle grille.
+            </summary>
+            <param name="width">Taille en largeur.</param>
+            <param name="height">Taille en longueur.</param>
+            <param name="func">Fonction à lancer, pour définire l'objet dans la grille (envoi la position x et y de l'objet).</param>
+            <param name="startVertical">Démarrer la boucle verticalement.</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.GetXY(UnityEngine.Vector3,System.Int32@,System.Int32@)">
+            <summary>
+            Convertie le x et le y en int d'un Vector3.
+            </summary>
+            <param name="value">Vector3 à convertire.</param>
+            <param name="x">Sortie du x.</param>
+            <param name="y">Sortie du y.</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.EchangePosition(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Echange la position entre deux objets.
+            </summary>
+            <param name="xA">Position x de l'objet A.</param>
+            <param name="yA">Position y de l'objet A.</param>
+            <param name="xB">Position x de l'objet B.</param>
+            <param name="yB">Position y de l'objet B.</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.SetObject(System.Int32,System.Int32,`0)">
+            <summary>
+            Définie un objet sur la grille.
+            </summary>
+            <param name="x">Position x de l'objet.</param>
+            <param name="y">Position y de l'objet.</param>
+            <param name="obj">Nouveau objet à définir.</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.TrySetObject(System.Int32,System.Int32,`0)">
+            <summary>
+            Définie un objet sur la grille.
+            </summary>
+            <param name="x">Position x de l'objet.</param>
+            <param name="y">Position y de l'objet.</param>
+            <param name="obj">Nouveau objet à définir.</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.GetObject(System.Int32,System.Int32)">
+            <summary>
+            Récupére l'objet sur la grille.
+            </summary>
+            <param name="x">Position x de l'objet.</param>
+            <param name="y">Position y de l'objet.</param>
+            <returns>Retourne l'objet demandé.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.TryGetObject(System.Int32,System.Int32,`0@)">
+            <summary>
+            Récupére l'objet sur la grille.
+            </summary>
+            <param name="x">Position x de l'objet.</param>
+            <param name="y">Position y de l'objet.</param>
+            <param name="obj">L'objet trouvé.</param>
+            <returns>Retourne si l'objet à été trouvé.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.CheckOutOfRangeArray(System.Int32,System.Int32)">
+            <summary>
+            Vérifie si si les valeurs x et y, dépasse la portée de la grille.
+            </summary>
+            <param name="x">Position x à vérifier.</param>
+            <param name="y">Position y à vérifier.</param>
+            <returns>Retourne si une des valeurs est hors-portée.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.#ctor(System.Int32,System.Int32,System.Int32,System.Func{System.Int32,System.Int32,System.Int32,`0},System.Boolean)">
+            <summary>
+            Instancie une nouvelle grille.
+            </summary>
+            <param name="width">Taille en largeur.</param>
+            <param name="height">Taille en longueur.</param>
+            <param name="depth">Taille en profondeur</param>
+            <param name="func">Fonction à lancer, pour définire l'objet dans la grille (envoi la position x et y de l'objet).</param>
+            <param name="startVertical">Démarrer la boucle verticalement.</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.GetXYZ(UnityEngine.Vector3,System.Int32@,System.Int32@,System.Int32@)">
+            <summary>
+            Convertie le x, y et le z en int d'un Vector3.
+            </summary>
+            <param name="value">Vector3 à convertire.</param>
+            <param name="x">Sortie du x.</param>
+            <param name="y">Sortie du y.</param>
+            <param name="z">Sortie du z.</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.SetObject(System.Int32,System.Int32,System.Int32,`0)">
+            <summary>
+            Définie un objet sur la grille.
+            </summary>
+            <param name="x">Position x de l'objet.</param>
+            <param name="y">Position y de l'objet.</param>
+            <param name="z">Position z de l'objet.</param>
+            <param name="obj">Nouveau objet à définir.</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.TrySetObject(System.Int32,System.Int32,System.Int32,`0)">
+            <summary>
+            Définie un objet sur la grille.
+            </summary>
+            <param name="x">Position x de l'objet.</param>
+            <param name="y">Position y de l'objet.</param>
+            <param name="z">Position z de l'objet.</param>
+            <param name="obj">Nouveau objet à définir.</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.GetZObjects(System.Int32,System.Int32)">
+            <summary>
+            Récupère tout les objets z sur la grille.
+            </summary>
+            <param name="x">Position x des objets.</param>
+            <param name="y">Position y des objets.</param>
+            <returns>Retourne les objets trouvé.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.GetObject(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Récupére l'objet sur la grille.
+            </summary>
+            <param name="x">Position x de l'objet.</param>
+            <param name="y">Position y de l'objet.</param>
+            <param name="z">Position z de l'objet.</param>
+            <returns>Retourne l'objet demandé.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.TryGetObject(System.Int32,System.Int32,System.Int32,`0@)">
+            <summary>
+            Récupére l'objet sur la grille.
+            </summary>
+            <param name="x">Position x de l'objet.</param>
+            <param name="y">Position y de l'objet.</param>
+            <param name="z">Position z de l'objet.</param>
+            <param name="obj">L'objet trouvé.</param>
+            <returns>Retourne si l'objet à été trouvé.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Grid`1.CheckOutOfRangeArray(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Vérifie si si les valeurs x et y, dépasse la portée de la grille.
+            </summary>
+            <param name="x">Position x à vérifier.</param>
+            <param name="y">Position y à vérifier.</param>
+            <param name="z">Position z à vérifier.</param>
+            <returns>Retourne si une des valeurs est hors-portée.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.PNGManager.Upload(UnityEngine.Texture2D,System.String)">
+            <summary>
+            Enregistre une texture à un chemin choisi.
+            </summary>
+            <param name="texture">Texture à enregistrer.</param>
+            <param name="path">Chemin d'enregistrement.</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.PNGManager.Load(System.String)">
+            <summary>
+            Charge une texture à un chemin choisi.
+            </summary>
+            <param name="path">Chemin du chargement.</param>
+            <returns>Retourne la texture chargé.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.TextureUtility.CreateTexture(System.Int32,System.Int32)">
+            <summary>
+            Crée une texture transparente.
+            </summary>
+            <param name="width">Largeur de la texture.</param>
+            <param name="height">Hauteur de la texture.</param>
+            <returns>Retourne la texture.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.TextureUtility.TintTexture(UnityEngine.Color[],UnityEngine.Color[])">
+            <summary>
+            Teint une texture avec un mask incorporé.
+            </summary>
+            <param name="texture">Texture et mask.</param>
+            <param name="tints">Teintures.</param>
+            <returns>Retourne la référence de textureBase.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.TextureUtility.TintTextureFromMask(UnityEngine.Color[],UnityEngine.Color[],UnityEngine.Color[])">
+            <summary>
+            Teint une texture à partir d'un mask.
+            </summary>
+            <param name="textureBase">Base de la texture.</param>
+            <param name="tints">Teintures.</param>
+            <param name="textureMask">Mask à utiliser.</param>
+            <returns>Retourne la référence de textureBase.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Utility.GetMouseWorldPosition">
+            <summary>
+            Récupére la position de la sourie.
+            </summary>
+            <returns>Retourne la positon de la sourie, avec z = 0.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Utility.StopWatchAction(System.Action,System.Boolean)">
+            <summary>
+            Chronométre la vitesse d'une Action.
+            </summary>
+            <param name="action">Action à chronométrer.</param>
+            <param name="showInLog">Doit-il afficher le résultat dans les logs?</param>
+            <returns>Retourne le temps écoulé.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Utility.IgnoreException(System.Action,System.Action)">
+            <summary>
+            Ignore toute les exceptions.
+            </summary>
+            <param name="action">Action a produire.</param>
+            <param name="so">Si l'action a une erreur, alors...</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Utility.IgnoreException``1(System.Func{``0},System.Func{``0})">
+            <summary>
+            Ignore toute les exceptions.
+            </summary>
+            <param name="action">Function a produire.</param>
+            <param name="so">Si la function a une erreur, alors...</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Utility.DistanceTo(System.Single,System.Single)">
+            <summary>
+            Calcule la distance entre deux float.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Utility.DistanceTo(System.Int32,System.Int32)">
+            <summary>
+            Calcule la distance entre deux int.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Utility.StartActionLater(UnityEngine.MonoBehaviour,System.Action,System.Single)">
+            <summary>
+            Démarre une Action après le temps indiqué.
+            </summary>
+            <param name="instance">Instance qui fait démarrer l'Action.</param>
+            <param name="action">Action à éxécuter.</param>
+            <param name="time">Temps d'attente (en seconde).</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Utility.StartUnityActionLater(UnityEngine.MonoBehaviour,UnityEngine.Events.UnityAction,System.Single)">
+            <summary>
+            Démarre une Action après le temps indiqué.
+            </summary>
+            <param name="instance">Instance qui fait démarrer l'Action.</param>
+            <param name="action">Action à éxécuter.</param>
+            <param name="time">Temps d'attente (en seconde).</param>
+        </member>
+        <member name="M:SinafProduction.Essentials.Utility.Color(System.String,UnityEngine.Color)">
+            <summary>
+            Ajoute une couleur au texte.
+            </summary>
+            <param name="text">Texte où la couleur doit être appliqué.</param>
+            <param name="color">Couleur à appliquer</param>
+            <returns>Retourne le résultat final.</returns>
+        </member>
+        <member name="M:SinafProduction.Essentials.Utility.Copy(UnityEngine.Mesh)">
+            <summary>
+            Copie le mesh donné.
+            </summary>
+            <param name="mesh">Mesh à copier.</param>
+            <returns>Retourne le nouveau mesh.</returns>
+        </member>
+    </members>
+</doc>

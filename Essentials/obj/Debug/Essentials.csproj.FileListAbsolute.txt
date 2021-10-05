@@ -1,0 +1,10 @@
+D:\Sinaf Production\Plugins\Essentials\Essentials\bin\Debug\Essentials.dll
+D:\Sinaf Production\Plugins\Essentials\Essentials\bin\Debug\Essentials.pdb
+D:\Sinaf Production\Plugins\Essentials\Essentials\bin\Debug\UnityEngine.dll
+D:\Sinaf Production\Plugins\Essentials\Essentials\bin\Debug\UnityEngine.xml
+D:\Sinaf Production\Plugins\Essentials\Essentials\obj\Debug\Essentials.csproj.AssemblyReference.cache
+D:\Sinaf Production\Plugins\Essentials\Essentials\obj\Debug\Essentials.csproj.CoreCompileInputs.cache
+D:\Sinaf Production\Plugins\Essentials\Essentials\obj\Debug\Essentials.csproj.CopyComplete
+D:\Sinaf Production\Plugins\Essentials\Essentials\obj\Debug\Essentials.dll
+D:\Sinaf Production\Plugins\Essentials\Essentials\obj\Debug\Essentials.pdb
+D:\Sinaf Production\Plugins\Essentials\Essentials\bin\Debug\Essentials.xml
